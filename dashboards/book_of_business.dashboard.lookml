@@ -8,7 +8,7 @@
   elements:
   - title: asset_by_program_type
     name: asset_by_program_type
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards_historical
     type: looker_grid
     fields: [dashboard.accnt_progrm_tp__value, dashboard.total_aua_current_month_drill_prgrm_tp]
@@ -146,7 +146,7 @@
     height: 5
   - title: top_mutual_funds
     name: top_mutual_funds
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards_historical
     type: looker_grid
     fields: [dashboard.total_aua_current_month_drill_top_10, dashboard.product_description,
@@ -279,7 +279,7 @@
     height: 7
   - title: top_holdings
     name: top_holdings
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards_historical
     type: looker_grid
     fields: [dashboard.total_aua_current_month_drill_top_10, dashboard.product_description,
@@ -415,7 +415,7 @@
     note_display: hover
     note_text: asset_change_breakdown_note
     merged_queries:
-    - model: qa_ax360_portal
+    - model: ax360_portal
       explore: ax360_dashboards_historical
       type: table
       fields: [last_12_months_master_list.last_12_month_with_mtd_wo_13th_month, dashboard.total_aua_last_12_month_master_list,
@@ -451,7 +451,7 @@
         _type_hint: yesno
         is_disabled: true
       join_fields: []
-    - model: qa_ax360_portal
+    - model: ax360_portal
       explore: ax360_dashboards_historical
       type: table
       fields: [dashboard.trad_dt_month_with_mtd, dashboard.existing_client_cashflow_drill,
@@ -676,7 +676,7 @@
         measure: true
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: dashboard
         suggest_dimension: dashboard.total_aua_last_12_month_master_list
         suggest_explore: ax360_dashboards_historical
@@ -685,10 +685,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Fdashboard.view.lkml?line=1184"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Fdashboard.view.lkml?line=1184"
         permanent: true
         source_file: views/dashboard.view.lkml
-        source_file_path: qa_ax360_portal/views/dashboard.view.lkml
+        source_file_path: prj_ax360_portal/views/dashboard.view.lkml
         sql: 'coalesce(${fact_holdng_rr_12_months_master_list.aua_converted_to_cad_last_business_day_of_months},0) '
         sql_case:
         filters:
@@ -761,7 +761,7 @@
         measure: true
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: dashboard
         suggest_dimension: dashboard.existing_client_cashflow_drill
         suggest_explore: ax360_dashboards_historical
@@ -770,10 +770,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Fdashboard.view.lkml?line=1702"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Fdashboard.view.lkml?line=1702"
         permanent: true
         source_file: views/dashboard.view.lkml
-        source_file_path: qa_ax360_portal/views/dashboard.view.lkml
+        source_file_path: prj_ax360_portal/views/dashboard.view.lkml
         sql: "${fact_transctn_rr.total_existing_clients_cashflow} "
         sql_case:
         filters:
@@ -818,7 +818,7 @@
         measure: true
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: dashboard
         suggest_dimension: dashboard.new_clients_cashflow_drill
         suggest_explore: ax360_dashboards_historical
@@ -827,10 +827,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Fdashboard.view.lkml?line=1538"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Fdashboard.view.lkml?line=1538"
         permanent: true
         source_file: views/dashboard.view.lkml
-        source_file_path: qa_ax360_portal/views/dashboard.view.lkml
+        source_file_path: prj_ax360_portal/views/dashboard.view.lkml
         sql: "${fact_transctn_rr.total_new_clients_cashflow} "
         sql_case:
         filters:
@@ -875,7 +875,7 @@
         measure: true
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: dashboard
         suggest_dimension: dashboard.lost_clients_cashflow_drill
         suggest_explore: ax360_dashboards_historical
@@ -884,10 +884,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Fdashboard.view.lkml?line=1626"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Fdashboard.view.lkml?line=1626"
         permanent: true
         source_file: views/dashboard.view.lkml
-        source_file_path: qa_ax360_portal/views/dashboard.view.lkml
+        source_file_path: prj_ax360_portal/views/dashboard.view.lkml
         sql: "${fact_transctn_rr.total_lost_clients_cashflow} "
         sql_case:
         filters:
@@ -933,7 +933,7 @@
         measure: false
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: last_12_months_master_list
         suggest_dimension: last_12_months_master_list.last_12_month_with_mtd_wo_13th_month
         suggest_explore: ax360_dashboards_historical
@@ -942,10 +942,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Flast_12_months_master_list.view.lkml?line=44"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Flast_12_months_master_list.view.lkml?line=44"
         permanent: true
         source_file: views/last_12_months_master_list.view.lkml
-        source_file_path: qa_ax360_portal/views/last_12_months_master_list.view.lkml
+        source_file_path: prj_ax360_portal/views/last_12_months_master_list.view.lkml
         sql: |-
           CASE WHEN  ${last_12_months_date} >= DATE_SUB( ${last_holding_date.last_update_date}, INTERVAL 11 month) THEN
                      CASE WHEN FORMAT_DATE('%Y-%m',${last_12_months_date})= FORMAT_DATE('%Y-%m',  cast("{{ _user_attributes['latest_holding_date'] }}" as date) )  THEN '{{ _localization['month_to_date'] }}'
@@ -1008,7 +1008,7 @@
         measure: false
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: last_12_months_master_list
         suggest_dimension: last_12_months_master_list.last_12_months_month
         suggest_explore: ax360_dashboards_historical
@@ -1019,10 +1019,10 @@
         time_interval:
           name: month
           count: 1
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Flast_12_months_master_list.view.lkml?line=10"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Flast_12_months_master_list.view.lkml?line=10"
         permanent: true
         source_file: views/last_12_months_master_list.view.lkml
-        source_file_path: qa_ax360_portal/views/last_12_months_master_list.view.lkml
+        source_file_path: prj_ax360_portal/views/last_12_months_master_list.view.lkml
         sql: "${TABLE}.last_12_months_date "
         sql_case:
         filters:
@@ -1066,7 +1066,7 @@
         measure: false
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: dashboard
         suggest_dimension: dashboard.trad_dt_month_with_mtd
         suggest_explore: ax360_dashboards_historical
@@ -1075,10 +1075,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Fdashboard.view.lkml?line=1394"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Fdashboard.view.lkml?line=1394"
         permanent: true
         source_file: views/dashboard.view.lkml
-        source_file_path: qa_ax360_portal/views/dashboard.view.lkml
+        source_file_path: prj_ax360_portal/views/dashboard.view.lkml
         sql: "CASE WHEN ${fact_transctn_rr.trad_dt_month}= (FORMAT_DATE('%Y-%m', ${last_holding_date.last_update_date}\
           \ ))  THEN '{{ _localization['month_to_date'] }}'\n              WHEN cast(format_date('%B',${fact_transctn_rr.trad_dt_date})\
           \ as string) =\"January\" THEN '{{ _localization['january'] }}'\n      \
@@ -1321,7 +1321,7 @@
     height: 8
   - title: asset_allocation
     name: asset_allocation
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards_historical
     type: looker_grid
     fields: [dashboard.allocation_name_locale, dashboard.total_aua_allctn]
@@ -1456,7 +1456,7 @@
     height: 5
   - title: asset_change_ytd
     name: asset_change_ytd
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards_historical
     type: marketplace_viz_multiple_value::multiple_value-marketplace
     fields: [total_aua_last_12_months_asset_change_pdt.aua_change_ytd, total_aua_last_12_months_asset_change_pdt.market_variation]
@@ -1533,7 +1533,7 @@
     height: 3
   - title: asset_trend
     name: asset_trend
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards_historical
     type: looker_area
     fields: [dashboard.total_aua_last_12_month_master_list, last_12_months_master_list.last_12_month_with_mtd_wo_13th_month]
@@ -1608,7 +1608,7 @@
     height: 5
   - title: existing_clients_ytd
     name: existing_clients_ytd
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards_historical
     type: marketplace_viz_multiple_value::multiple_value-marketplace
     fields: [fact_transctn_rr.existing_clients_cashflow_ytd_scorecard]
@@ -1688,7 +1688,7 @@
     height: 3
   - title: new_clients_ytd
     name: new_clients_ytd
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards_historical
     type: marketplace_viz_multiple_value::multiple_value-marketplace
     fields: [fact_transctn_rr.new_clients_cashflow_ytd_scorecard]
@@ -1768,7 +1768,7 @@
     height: 3
   - title: lost_clients_ytd
     name: lost_clients_ytd
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards_historical
     type: marketplace_viz_multiple_value::multiple_value-marketplace
     fields: [fact_transctn_rr.lost_clients_cashflow_ytd_scorecard]
@@ -1862,7 +1862,7 @@
     height: 3
   - title: total_assets_scorecard
     name: total_assets_scorecard
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards_historical
     type: marketplace_viz_multiple_value::multiple_value-marketplace
     fields: [dashboard.total_aua_multi_value]
@@ -1925,7 +1925,7 @@
     height: 5
   - title: market_variation_ytd
     name: market_variation_ytd
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards_historical
     type: marketplace_viz_multiple_value::multiple_value-marketplace
     fields: [total_aua_last_12_months_asset_change_pdt.market_variation]
@@ -2001,7 +2001,7 @@
     height: 3
   - title: asset_change_ytd_title
     name: asset_change_ytd_title
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards_historical
     type: single_value
     fields: [dashboard.bob_ytd_net_change_title]
@@ -2051,7 +2051,7 @@
     height: 1
   - title: asset_change_ytd_formula
     name: asset_change_ytd_formula
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards_historical
     type: single_value
     fields: [dashboard.bob_ytd_net_change_formula]
@@ -2101,7 +2101,7 @@
     height: 2
   - title: asset_change_by_month
     name: asset_change_by_month
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards_historical
     type: looker_line
     fields: [last_12_months_master_list.last_12_month_with_mtd_wo_13th_month, asset_change_ndt_tran.total_aua_last_12_month_including_current,
@@ -2207,7 +2207,7 @@
     height: 8
   - title: 12_month_net_change_title
     name: 12_month_net_change_title
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards_historical
     type: single_value
     fields: [dashboard.bob_12_month_net_change_title]
@@ -2257,7 +2257,7 @@
     height: 1
   - title: new_client_cash_flow
     name: new_client_cash_flow
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards_historical
     type: marketplace_viz_multiple_value::multiple_value-marketplace
     fields: [dashboard.new_clients_cashflow_scorecard]
@@ -2341,7 +2341,7 @@
     height: 3
   - title: existing_client_cash_flow
     name: existing_client_cash_flow
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards_historical
     type: marketplace_viz_multiple_value::multiple_value-marketplace
     fields: [dashboard.existing_client_cashflow_scorecard]
@@ -2422,7 +2422,7 @@
     height: 3
   - title: asset_change_12_months_cad
     name: asset_change_12_months_cad
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards_historical
     type: marketplace_viz_multiple_value::multiple_value-marketplace
     fields: [asset_change_ndt_tran.sum_aua_change_scorecard]
@@ -2507,7 +2507,7 @@
     height: 3
   - title: lost_client_cash_flow
     name: lost_client_cash_flow
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards_historical
     type: marketplace_viz_multiple_value::multiple_value-marketplace
     fields: [dashboard.lost_clients_cashflow_scorecard]
@@ -2605,7 +2605,7 @@
     height: 3
   - title: net_client_growth_ytd
     name: net_client_growth_ytd
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards_historical
     type: marketplace_viz_multiple_value::multiple_value-marketplace
     fields: [fact_transctn_rr.net_client_growth_ytd_scorecard]
@@ -2686,7 +2686,7 @@
     height: 3
   - title: net_client_growth
     name: net_client_growth
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards_historical
     type: marketplace_viz_multiple_value::multiple_value-marketplace
     fields: [dashboard.net_client_growth_scorecard]
@@ -2775,7 +2775,7 @@
     height: 3
   - title: market_variation_scorecard_cad
     name: market_variation_scorecard_cad
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards_historical
     type: marketplace_viz_multiple_value::multiple_value-marketplace
     fields: [asset_change_ndt_tran.market_variation]
@@ -2867,7 +2867,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards_historical
     listens_to_filters: [Account Type, Program Type, RVP Name, Branch Name, Team Name]
     field: dashboard.rep_cd_with_rep_cd_name
@@ -2880,7 +2880,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards_historical
     listens_to_filters: [IA Code, Program Type, RVP Name, Branch Name, Team Name]
     field: dim_accnt.accnt_tp_value
@@ -2893,7 +2893,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards_historical
     listens_to_filters: [IA Code, Account Type, RVP Name, Branch Name, Team Name]
     field: dim_accnt.accnt_progrm_tp_name
@@ -2906,7 +2906,7 @@
     ui_config:
       type: advanced
       display: popover
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards_historical
     listens_to_filters: [IA Code, Account Type, Program Type, Branch Name, Team Name]
     field: filtered_rep_cd_by_rvp_branch_team.regional_vice_president_name
@@ -2919,7 +2919,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards_historical
     listens_to_filters: [IA Code, Account Type, Program Type, RVP Name, Team Name]
     field: filtered_rep_cd_by_rvp_branch_team.physical_branch_manager_name
@@ -2932,7 +2932,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards_historical
     listens_to_filters: [IA Code, Account Type, Program Type, RVP Name, Branch Name]
     field: filtered_rep_cd_by_rvp_branch_team.team_name

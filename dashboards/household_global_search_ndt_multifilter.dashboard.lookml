@@ -9,7 +9,7 @@
   elements:
   - title: Household list results
     name: Household list results
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: global_search_household_ndt
     type: looker_grid
     fields: [global_search_household_ndt.houshld_list_name, global_search_household_ndt.houshld_id,
@@ -103,7 +103,7 @@
     ui_config:
       type: advanced
       display: popover
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: global_search_household_ndt
     listens_to_filters: []
     field: global_search_household_ndt.houshld_list_name
@@ -116,7 +116,7 @@
     ui_config:
       type: advanced
       display: popover
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: access_portal_dashboard
     listens_to_filters: []
     field: dim_party.party_name
@@ -129,7 +129,7 @@
     ui_config:
       type: advanced
       display: popover
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: access_portal_dashboard
     listens_to_filters: []
     field: dim_user_rep_cds.rep_cd
@@ -143,7 +143,7 @@
       type: advanced
       display: popover
       options: []
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: global_search_household_ndt
     listens_to_filters: []
     field: global_search_household_ndt.aua_converted_to_cad_one
@@ -156,7 +156,7 @@
     ui_config:
       type: advanced
       display: popover
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: global_search_household_ndt
     listens_to_filters: []
     field: global_search_household_ndt.multifilter

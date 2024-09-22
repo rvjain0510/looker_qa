@@ -8,7 +8,7 @@
   elements:
   - title: total_accounts_by_account_type
     name: total_accounts_by_account_type
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards
     type: looker_grid
     fields: [dashboard.filtered_accnt_tp__name_merged, dashboard.total_active_accounts_drill_accnt_tp,
@@ -152,7 +152,7 @@
     height: 9
   - title: total_accounts_by_program_type
     name: total_accounts_by_program_type
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards
     type: looker_grid
     fields: [dashboard.total_active_accounts_drill_prgrm_tp, dashboard.filtered_accnt_progrm_tp__value,
@@ -303,7 +303,7 @@
     height: 9
   - title: total_accounts
     name: total_accounts
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards
     type: marketplace_viz_multiple_value::multiple_value-marketplace
     fields: [dashboard.total_accounts_multi_value]
@@ -400,7 +400,7 @@
     height: 4
   - title: new_accounts
     name: new_accounts
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards
     type: marketplace_viz_multiple_value::multiple_value-marketplace
     fields: [dashboard.total_new_accounts_multi_value]
@@ -513,7 +513,7 @@
     height: 4
   - title: closed_accounts
     name: closed_accounts
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards
     type: marketplace_viz_multiple_value::multiple_value-marketplace
     fields: [dashboard.total_lost_accounts_multi_value]
@@ -575,7 +575,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards
     listens_to_filters: [RVP Name, Branch Name, Team Name]
     field: dashboard.rep_cd_with_rep_cd_name
@@ -588,7 +588,7 @@
     ui_config:
       type: advanced
       display: popover
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards
     listens_to_filters: [IA Code, Branch Name, Team Name]
     field: filtered_rep_cd_by_rvp_branch_team.regional_vice_president_name
@@ -601,7 +601,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards
     listens_to_filters: [IA Code, RVP Name, Team Name]
     field: filtered_rep_cd_by_rvp_branch_team.physical_branch_manager_name
@@ -614,7 +614,7 @@
     ui_config:
       type: advanced
       display: popover
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards
     listens_to_filters: [IA Code, RVP Name, Branch Name]
     field: filtered_rep_cd_by_rvp_branch_team.team_name

@@ -7,7 +7,7 @@
   elements:
   - title: New Tile
     name: New Tile
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: access_portal_dashboard
     type: looker_grid
     fields: [dashboard.account_number_link, dashboard.account_owner_link, dashboard.accnt_ownrshp_tp,
