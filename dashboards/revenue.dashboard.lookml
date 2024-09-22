@@ -8,7 +8,7 @@
   elements:
   - title: average_revenue
     name: average_client_revenue
-    model: ax360_portal
+    model: qa_ax360_portal
     explore: ax360_dashboards_revenue
     type: marketplace_viz_multiple_value::multiple_value-marketplace
     fields: [dashboard.average_client_revenue_multi_value,dashboard.average_household_revenue_multi_value]
@@ -54,7 +54,7 @@
     height: 4
   - title: revenue
     name: average_household_revenue
-    model: ax360_portal
+    model: qa_ax360_portal
     explore: ax360_dashboards_hh_revenue
     type: marketplace_viz_multiple_value::multiple_value-marketplace
     fields: [dashboard.total_12_month_revenue_multi_value,dashboard.ytd_revenue_multi_value]
@@ -100,7 +100,7 @@
     height: 4
   - title: revenue_on_assets
     name: revenue_on_assets
-    model: ax360_portal
+    model: qa_ax360_portal
     explore: ax360_dashboards_revenue
     type: marketplace_viz_multiple_value::multiple_value-marketplace
     fields: [dashboard.revenue_on_assets_multi_value]
@@ -166,7 +166,7 @@
     height: 4
   - title: recurring_revenue_ratio
     name: recurring_revenue_ratio
-    model: ax360_portal
+    model: qa_ax360_portal
     explore: ax360_dashboards_revenue
     type: marketplace_viz_multiple_value::multiple_value-marketplace
     fields: [dashboard.recurring_revenue_ratio_multi_value]
@@ -232,7 +232,7 @@
     height: 4
   - title: revenue_by_program_type
     name: revenue_by_program_type
-    model: ax360_portal
+    model: qa_ax360_portal
     explore: ax360_dashboards_revenue
     type: looker_grid
     fields: [dashboard.filtered_accnt_progrm_tp__value, total_revenue_last_12_months_pdt.total_12_month_revenue,
@@ -397,7 +397,7 @@
     note_display: hover
     note_text: client_segmentation_by_income_note
     merged_queries:
-    - model: ax360_portal
+    - model: qa_ax360_portal
       explore: ax360_dashboards_revenue
       type: table
       fields: [dashboard.income_tier, dashboard.total_clients_pct_drill_for_segments_nohtml,
@@ -445,7 +445,7 @@
         table_calculation: total_aua_segments
         _type_hint: number
       join_fields: []
-    - model: ax360_portal
+    - model: qa_ax360_portal
       explore: ax360_dashboards_revenue
       type: table
       fields: [dashboard.income_tier, total_revenue_last_12_months_pdt.total_12_month_revenue_for_clients,
@@ -1431,7 +1431,7 @@
     note_display: hover
     note_text: client_segmentation_by_age_note
     merged_queries:
-    - model: ax360_portal
+    - model: qa_ax360_portal
       explore: ax360_dashboards_revenue
       type: table
       fields: [dashboard.total_clients_pct_drill_for_segments_nohtml, dim_party.total_clients,
@@ -1519,7 +1519,7 @@
         table_calculation: total_aua_segments
         _type_hint: number
       join_fields: []
-    - model: ax360_portal
+    - model: qa_ax360_portal
       explore: ax360_dashboards_revenue
       type: table
       fields: [dashboard.age_tier, total_revenue_last_12_months_pdt.total_12_month_revenue_for_clients,
@@ -2499,7 +2499,7 @@
     height: 8
   - title: household_revenue_segmentation_by_income
     name: household_revenue_segmentation_by_income
-    model: ax360_portal
+    model: qa_ax360_portal
     explore: ax360_dashboards_hh_revenue
     type: looker_grid
     fields: [households_age_income_segments.income_tier, households_age_income_segments.total_households_count,
@@ -2866,7 +2866,7 @@
     note_display: hover
     note_text: revenue_segmentation_note
     merged_queries:
-    - model: ax360_portal
+    - model: qa_ax360_portal
       explore: ax360_dashboards_revenue
       type: table
       fields: [total_revenue_party_ndt.revenue_segment, total_revenue_party_ndt.total_clients_rs]
@@ -2947,7 +2947,7 @@
         _type_hint: number
         is_disabled: true
       join_fields: []
-    - model: ax360_portal
+    - model: qa_ax360_portal
       explore: ax360_dashboards_revenue
       type: table
       fields: [households_revenue_segments_ndt.revenue_tier, households_revenue_segments_ndt.total_households_rs]
@@ -3275,7 +3275,7 @@
     height: 6
   - title: revenue_trend
     name: revenue_trend
-    model: ax360_portal
+    model: qa_ax360_portal
     explore: ax360_dashboards_revenue
     type: looker_line
     fields: [last_12_months_master_list.last_12_months_month, last_12_months_master_list.last_12_month_with_mtd,
@@ -3392,7 +3392,7 @@
     height: 7
   - title: rolling_12_month_revenue_trend
     name: rolling_12_month_revenue_trend
-    model: ax360_portal
+    model: qa_ax360_portal
     explore: ax360_dashboards_revenue
     type: looker_area
     fields: [last_24_month_master_list.last_24_months, fact_revn_rr_24_months_master_list.total_revenue, last_24_month_master_list.last_24_month_with_mtd]
@@ -3516,7 +3516,7 @@
     height: 7
   - title: revenue_trend_by_program_type
     name: revenue_trend_by_program_type
-    model: ax360_portal
+    model: qa_ax360_portal
     explore: ax360_dashboards_revenue
     type: looker_line
     fields: [last_12_months_master_list.last_12_months_month, last_12_months_master_list.last_12_month_with_mtd,
@@ -3672,7 +3672,7 @@
     height: 6
   - title: household_revenue_segmentation_by_age
     name: household_revenue_segmentation_by_age
-    model: ax360_portal
+    model: qa_ax360_portal
     explore: ax360_dashboards_hh_revenue
     type: looker_grid
     fields: [households_age_income_segments.total_households_count, households_age_income_segments.households_pct_for_revenue_drill,
@@ -4037,7 +4037,7 @@
     height: 8
   - title: household_revenue_segmentation_by_asset
     name: household_revenue_segmentation_by_asset
-    model: ax360_portal
+    model: qa_ax360_portal
     explore: ax360_dashboards_hh_revenue
     type: looker_grid
     fields: [households_age_income_segments.total_households_count, households_aua_for_revenue_segments_ndt.households_aua,
@@ -4391,7 +4391,7 @@
   - name: client_revenue_segmentation_by_asset
     title: client_revenue_segmentation_by_asset
     merged_queries:
-    - model: ax360_portal
+    - model: qa_ax360_portal
       explore: ax360_dashboards_revenue
       type: table
       fields: [dashboard.total_clients_pct_drill_for_segments_nohtml, dashboard.total_aua_pct_for_revenue_segments,
@@ -4440,7 +4440,7 @@
         table_calculation: total_aua_segments
         _type_hint: number
       join_fields: []
-    - model: ax360_portal
+    - model: qa_ax360_portal
       explore: ax360_dashboards_revenue
       type: table
       fields: [total_revenue_last_12_months_pdt.total_12_month_revenue_for_clients,
@@ -5416,7 +5416,7 @@
       type: tag_list
       display: popover
       options: []
-    model: ax360_portal
+    model: qa_ax360_portal
     explore: ax360_dashboards_revenue
     listens_to_filters: [RVP Name, Branch Name, Team Name]
     field: dashboard.rep_cd_with_rep_cd_name
@@ -5430,7 +5430,7 @@
       type: advanced
       display: popover
       options: []
-    model: ax360_portal
+    model: qa_ax360_portal
     explore: ax360_dashboards_revenue
     listens_to_filters: [IA Code, Branch Name, Team Name]
     field: filtered_rep_cd_by_rvp_branch_team.regional_vice_president_name
@@ -5444,7 +5444,7 @@
       type: advanced
       display: popover
       options: []
-    model: ax360_portal
+    model: qa_ax360_portal
     explore: ax360_dashboards_revenue
     listens_to_filters: [Team Name, IA Code, RVP Name]
     field: filtered_rep_cd_by_rvp_branch_team.physical_branch_manager_name
@@ -5458,7 +5458,7 @@
       type: advanced
       display: popover
       options: []
-    model: ax360_portal
+    model: qa_ax360_portal
     explore: ax360_dashboards_revenue
     listens_to_filters: [IA Code, RVP Name, Branch Name]
     field: filtered_rep_cd_by_rvp_branch_team.team_name
