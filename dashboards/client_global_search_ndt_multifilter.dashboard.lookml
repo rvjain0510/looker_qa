@@ -9,7 +9,7 @@
   elements:
   - title: Client list results
     name: Client list results
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: global_search_client_ndt
     type: looker_grid
     fields: [global_search_client_ndt.client_list_name, global_search_client_ndt.party_date_of_birth_date,
@@ -122,7 +122,7 @@
     ui_config:
       type: advanced
       display: popover
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: global_search_client_ndt
     listens_to_filters: []
     field: global_search_client_ndt.client_list_name
@@ -136,7 +136,7 @@
       type: advanced
       display: popover
       options: []
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: global_search_client_ndt
     listens_to_filters: []
     field: global_search_client_ndt.party_date_of_birth_date
@@ -150,7 +150,7 @@
       type: advanced
       display: popover
       options: []
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: global_search_client_ndt
     listens_to_filters: []
     field: global_search_client_ndt.party_address
@@ -163,7 +163,7 @@
     ui_config:
       type: advanced
       display: popover
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: global_search_client_ndt
     listens_to_filters: []
     field: global_search_client_ndt.party_primary_email
@@ -177,7 +177,7 @@
       type: advanced
       display: popover
       options: []
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: global_search_client_ndt
     listens_to_filters: []
     field: global_search_client_ndt.formatted_party_primary_phone
@@ -190,7 +190,7 @@
     ui_config:
       type: advanced
       display: popover
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: access_portal_dashboard
     listens_to_filters: []
     field: dim_accnt.acct_type_and_number
@@ -203,7 +203,7 @@
     ui_config:
       type: advanced
       display: popover
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: access_portal_dashboard
     listens_to_filters: []
     field: dim_user_rep_cds.rep_cd
@@ -217,7 +217,7 @@
       type: advanced
       display: popover
       options: []
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: global_search_client_ndt
     listens_to_filters: []
     field: global_search_client_ndt.aua_converted_to_cad
@@ -230,7 +230,7 @@
     ui_config:
       type: advanced
       display: popover
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: global_search_client_ndt
     listens_to_filters: []
     field: global_search_client_ndt.multifilter
