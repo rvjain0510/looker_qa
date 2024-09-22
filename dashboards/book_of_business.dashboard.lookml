@@ -8,7 +8,7 @@
   elements:
   - title: asset_by_program_type
     name: asset_by_program_type
-    model: ax360_portal
+    model: qa_ax360_portal
     explore: ax360_dashboards_historical
     type: looker_grid
     fields: [dashboard.accnt_progrm_tp__value, dashboard.total_aua_current_month_drill_prgrm_tp]
@@ -146,7 +146,7 @@
     height: 5
   - title: top_mutual_funds
     name: top_mutual_funds
-    model: ax360_portal
+    model: qa_ax360_portal
     explore: ax360_dashboards_historical
     type: looker_grid
     fields: [dashboard.total_aua_current_month_drill_top_10, dashboard.product_description,
@@ -279,7 +279,7 @@
     height: 7
   - title: top_holdings
     name: top_holdings
-    model: ax360_portal
+    model: qa_ax360_portal
     explore: ax360_dashboards_historical
     type: looker_grid
     fields: [dashboard.total_aua_current_month_drill_top_10, dashboard.product_description,
@@ -415,7 +415,7 @@
     note_display: hover
     note_text: asset_change_breakdown_note
     merged_queries:
-    - model: ax360_portal
+    - model: qa_ax360_portal
       explore: ax360_dashboards_historical
       type: table
       fields: [last_12_months_master_list.last_12_month_with_mtd_wo_13th_month, dashboard.total_aua_last_12_month_master_list,
@@ -451,7 +451,7 @@
         _type_hint: yesno
         is_disabled: true
       join_fields: []
-    - model: ax360_portal
+    - model: qa_ax360_portal
       explore: ax360_dashboards_historical
       type: table
       fields: [dashboard.trad_dt_month_with_mtd, dashboard.existing_client_cashflow_drill,
@@ -1321,7 +1321,7 @@
     height: 8
   - title: asset_allocation
     name: asset_allocation
-    model: ax360_portal
+    model: qa_ax360_portal
     explore: ax360_dashboards_historical
     type: looker_grid
     fields: [dashboard.allocation_name_locale, dashboard.total_aua_allctn]
@@ -1456,7 +1456,7 @@
     height: 5
   - title: asset_change_ytd
     name: asset_change_ytd
-    model: ax360_portal
+    model: qa_ax360_portal
     explore: ax360_dashboards_historical
     type: marketplace_viz_multiple_value::multiple_value-marketplace
     fields: [total_aua_last_12_months_asset_change_pdt.aua_change_ytd, total_aua_last_12_months_asset_change_pdt.market_variation]
@@ -1533,7 +1533,7 @@
     height: 3
   - title: asset_trend
     name: asset_trend
-    model: ax360_portal
+    model: qa_ax360_portal
     explore: ax360_dashboards_historical
     type: looker_area
     fields: [dashboard.total_aua_last_12_month_master_list, last_12_months_master_list.last_12_month_with_mtd_wo_13th_month]
@@ -1608,7 +1608,7 @@
     height: 5
   - title: existing_clients_ytd
     name: existing_clients_ytd
-    model: ax360_portal
+    model: qa_ax360_portal
     explore: ax360_dashboards_historical
     type: marketplace_viz_multiple_value::multiple_value-marketplace
     fields: [fact_transctn_rr.existing_clients_cashflow_ytd_scorecard]
@@ -1688,7 +1688,7 @@
     height: 3
   - title: new_clients_ytd
     name: new_clients_ytd
-    model: ax360_portal
+    model: qa_ax360_portal
     explore: ax360_dashboards_historical
     type: marketplace_viz_multiple_value::multiple_value-marketplace
     fields: [fact_transctn_rr.new_clients_cashflow_ytd_scorecard]
@@ -1768,7 +1768,7 @@
     height: 3
   - title: lost_clients_ytd
     name: lost_clients_ytd
-    model: ax360_portal
+    model: qa_ax360_portal
     explore: ax360_dashboards_historical
     type: marketplace_viz_multiple_value::multiple_value-marketplace
     fields: [fact_transctn_rr.lost_clients_cashflow_ytd_scorecard]
@@ -1862,7 +1862,7 @@
     height: 3
   - title: total_assets_scorecard
     name: total_assets_scorecard
-    model: ax360_portal
+    model: qa_ax360_portal
     explore: ax360_dashboards_historical
     type: marketplace_viz_multiple_value::multiple_value-marketplace
     fields: [dashboard.total_aua_multi_value]
@@ -1925,7 +1925,7 @@
     height: 5
   - title: market_variation_ytd
     name: market_variation_ytd
-    model: ax360_portal
+    model: qa_ax360_portal
     explore: ax360_dashboards_historical
     type: marketplace_viz_multiple_value::multiple_value-marketplace
     fields: [total_aua_last_12_months_asset_change_pdt.market_variation]
@@ -2001,7 +2001,7 @@
     height: 3
   - title: asset_change_ytd_title
     name: asset_change_ytd_title
-    model: ax360_portal
+    model: qa_ax360_portal
     explore: ax360_dashboards_historical
     type: single_value
     fields: [dashboard.bob_ytd_net_change_title]
@@ -2051,7 +2051,7 @@
     height: 1
   - title: asset_change_ytd_formula
     name: asset_change_ytd_formula
-    model: ax360_portal
+    model: qa_ax360_portal
     explore: ax360_dashboards_historical
     type: single_value
     fields: [dashboard.bob_ytd_net_change_formula]
@@ -2101,7 +2101,7 @@
     height: 2
   - title: asset_change_by_month
     name: asset_change_by_month
-    model: ax360_portal
+    model: qa_ax360_portal
     explore: ax360_dashboards_historical
     type: looker_line
     fields: [last_12_months_master_list.last_12_month_with_mtd_wo_13th_month, asset_change_ndt_tran.total_aua_last_12_month_including_current,
@@ -2207,7 +2207,7 @@
     height: 8
   - title: 12_month_net_change_title
     name: 12_month_net_change_title
-    model: ax360_portal
+    model: qa_ax360_portal
     explore: ax360_dashboards_historical
     type: single_value
     fields: [dashboard.bob_12_month_net_change_title]
@@ -2257,7 +2257,7 @@
     height: 1
   - title: new_client_cash_flow
     name: new_client_cash_flow
-    model: ax360_portal
+    model: qa_ax360_portal
     explore: ax360_dashboards_historical
     type: marketplace_viz_multiple_value::multiple_value-marketplace
     fields: [dashboard.new_clients_cashflow_scorecard]
@@ -2341,7 +2341,7 @@
     height: 3
   - title: existing_client_cash_flow
     name: existing_client_cash_flow
-    model: ax360_portal
+    model: qa_ax360_portal
     explore: ax360_dashboards_historical
     type: marketplace_viz_multiple_value::multiple_value-marketplace
     fields: [dashboard.existing_client_cashflow_scorecard]
@@ -2422,7 +2422,7 @@
     height: 3
   - title: asset_change_12_months_cad
     name: asset_change_12_months_cad
-    model: ax360_portal
+    model: qa_ax360_portal
     explore: ax360_dashboards_historical
     type: marketplace_viz_multiple_value::multiple_value-marketplace
     fields: [asset_change_ndt_tran.sum_aua_change_scorecard]
@@ -2507,7 +2507,7 @@
     height: 3
   - title: lost_client_cash_flow
     name: lost_client_cash_flow
-    model: ax360_portal
+    model: qa_ax360_portal
     explore: ax360_dashboards_historical
     type: marketplace_viz_multiple_value::multiple_value-marketplace
     fields: [dashboard.lost_clients_cashflow_scorecard]
@@ -2605,7 +2605,7 @@
     height: 3
   - title: net_client_growth_ytd
     name: net_client_growth_ytd
-    model: ax360_portal
+    model: qa_ax360_portal
     explore: ax360_dashboards_historical
     type: marketplace_viz_multiple_value::multiple_value-marketplace
     fields: [fact_transctn_rr.net_client_growth_ytd_scorecard]
@@ -2686,7 +2686,7 @@
     height: 3
   - title: net_client_growth
     name: net_client_growth
-    model: ax360_portal
+    model: qa_ax360_portal
     explore: ax360_dashboards_historical
     type: marketplace_viz_multiple_value::multiple_value-marketplace
     fields: [dashboard.net_client_growth_scorecard]
@@ -2775,7 +2775,7 @@
     height: 3
   - title: market_variation_scorecard_cad
     name: market_variation_scorecard_cad
-    model: ax360_portal
+    model: qa_ax360_portal
     explore: ax360_dashboards_historical
     type: marketplace_viz_multiple_value::multiple_value-marketplace
     fields: [asset_change_ndt_tran.market_variation]
@@ -2867,7 +2867,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: ax360_portal
+    model: qa_ax360_portal
     explore: ax360_dashboards_historical
     listens_to_filters: [Account Type, Program Type, RVP Name, Branch Name, Team Name]
     field: dashboard.rep_cd_with_rep_cd_name
@@ -2880,7 +2880,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: ax360_portal
+    model: qa_ax360_portal
     explore: ax360_dashboards_historical
     listens_to_filters: [IA Code, Program Type, RVP Name, Branch Name, Team Name]
     field: dim_accnt.accnt_tp_value
@@ -2893,7 +2893,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: ax360_portal
+    model: qa_ax360_portal
     explore: ax360_dashboards_historical
     listens_to_filters: [IA Code, Account Type, RVP Name, Branch Name, Team Name]
     field: dim_accnt.accnt_progrm_tp_name
@@ -2906,7 +2906,7 @@
     ui_config:
       type: advanced
       display: popover
-    model: ax360_portal
+    model: qa_ax360_portal
     explore: ax360_dashboards_historical
     listens_to_filters: [IA Code, Account Type, Program Type, Branch Name, Team Name]
     field: filtered_rep_cd_by_rvp_branch_team.regional_vice_president_name
@@ -2919,7 +2919,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: ax360_portal
+    model: qa_ax360_portal
     explore: ax360_dashboards_historical
     listens_to_filters: [IA Code, Account Type, Program Type, RVP Name, Team Name]
     field: filtered_rep_cd_by_rvp_branch_team.physical_branch_manager_name
@@ -2932,7 +2932,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: ax360_portal
+    model: qa_ax360_portal
     explore: ax360_dashboards_historical
     listens_to_filters: [IA Code, Account Type, Program Type, RVP Name, Branch Name]
     field: filtered_rep_cd_by_rvp_branch_team.team_name
