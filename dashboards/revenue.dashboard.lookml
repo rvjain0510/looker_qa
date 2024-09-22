@@ -628,7 +628,7 @@
         measure: true
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: dashboard
         suggest_dimension: dashboard.total_clients_pct_drill_for_segments_nohtml
         suggest_explore: ax360_dashboards_revenue
@@ -637,10 +637,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Fdashboard.view.lkml?line=763"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Fdashboard.view.lkml?line=763"
         permanent: true
         source_file: views/dashboard.view.lkml
-        source_file_path: qa_ax360_portal/views/dashboard.view.lkml
+        source_file_path: prj_ax360_portal/views/dashboard.view.lkml
         sql: "${dim_party.total_clients} /nullif(${totals_for_segments_ndt.total_clients_for_segments},0)"
         sql_case:
         filters:
@@ -685,7 +685,7 @@
         measure: true
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: dashboard
         suggest_dimension: dashboard.total_aua_pct_for_revenue_segments
         suggest_explore: ax360_dashboards_revenue
@@ -694,10 +694,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Fdashboard.view.lkml?line=1068"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Fdashboard.view.lkml?line=1068"
         permanent: true
         source_file: views/dashboard.view.lkml
-        source_file_path: qa_ax360_portal/views/dashboard.view.lkml
+        source_file_path: prj_ax360_portal/views/dashboard.view.lkml
         sql: coalesce( ${total_aua_12_month_including_current_for_segments} /nullif(${totals_for_segments_ndt.total_aua_for_segments},0),0)
         sql_case:
         filters:
@@ -742,7 +742,7 @@
         measure: true
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: dim_party
         suggest_dimension: dim_party.total_clients
         suggest_explore: ax360_dashboards_revenue
@@ -751,10 +751,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Fdim_party.view.lkml?line=794"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Fdim_party.view.lkml?line=794"
         permanent: true
         source_file: views/dim_party.view.lkml
-        source_file_path: qa_ax360_portal/views/dim_party.view.lkml
+        source_file_path: prj_ax360_portal/views/dim_party.view.lkml
         sql: 'count(distinct case when ${dim_accnt.account_status_level_1} = "{{ _localization[''Open'']
           }}" then ${dim_party.party_id} end) '
         sql_case:
@@ -800,7 +800,7 @@
         measure: true
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: dashboard
         suggest_dimension: dashboard.total_aua_12_month_including_current_for_segments
         suggest_explore: ax360_dashboards_revenue
@@ -809,10 +809,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Fdashboard.view.lkml?line=1054"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Fdashboard.view.lkml?line=1054"
         permanent: true
         source_file: views/dashboard.view.lkml
-        source_file_path: qa_ax360_portal/views/dashboard.view.lkml
+        source_file_path: prj_ax360_portal/views/dashboard.view.lkml
         sql: "${fact_holdng_rr.total_aua_last_12_month_including_current} "
         sql_case:
         filters:
@@ -857,7 +857,7 @@
         measure: true
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: dashboard
         suggest_dimension: dashboard.total_aua_current_month_for_segments
         suggest_explore: ax360_dashboards_revenue
@@ -866,10 +866,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Fdashboard.view.lkml?line=1039"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Fdashboard.view.lkml?line=1039"
         permanent: true
         source_file: views/dashboard.view.lkml
-        source_file_path: qa_ax360_portal/views/dashboard.view.lkml
+        source_file_path: prj_ax360_portal/views/dashboard.view.lkml
         sql: "${fact_holdng_rr.total_aua_current_month} "
         sql_case:
         filters:
@@ -942,7 +942,7 @@
         measure: true
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: total_revenue_last_12_months_pdt
         suggest_dimension: total_revenue_last_12_months_pdt.total_12_month_revenue_for_clients
         suggest_explore: ax360_dashboards_revenue
@@ -951,10 +951,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Ftotal_revenue_last_12_months_pdt.view.lkml?line=92"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Ftotal_revenue_last_12_months_pdt.view.lkml?line=92"
         permanent: true
         source_file: views/total_revenue_last_12_months_pdt.view.lkml
-        source_file_path: qa_ax360_portal/views/total_revenue_last_12_months_pdt.view.lkml
+        source_file_path: prj_ax360_portal/views/total_revenue_last_12_months_pdt.view.lkml
         sql: 'coalesce(SUM(${TABLE}.total_12_month_revenue),0) '
         sql_case:
         filters:
@@ -999,7 +999,7 @@
         measure: true
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: total_revenue_last_12_months_pdt
         suggest_dimension: total_revenue_last_12_months_pdt.recurring_revenue_ratio_12_month_for_clients
         suggest_explore: ax360_dashboards_revenue
@@ -1008,10 +1008,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Ftotal_revenue_last_12_months_pdt.view.lkml?line=112"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Ftotal_revenue_last_12_months_pdt.view.lkml?line=112"
         permanent: true
         source_file: views/total_revenue_last_12_months_pdt.view.lkml
-        source_file_path: qa_ax360_portal/views/total_revenue_last_12_months_pdt.view.lkml
+        source_file_path: prj_ax360_portal/views/total_revenue_last_12_months_pdt.view.lkml
         sql: 'ifnull(${total_12_month_recurring_revenue_for_clients} / nullif(${total_12_month_revenue_for_clients},0),0) '
         sql_case:
         filters:
@@ -1056,7 +1056,7 @@
         measure: true
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: dim_party
         suggest_dimension: dim_party.average_client_age
         suggest_explore: ax360_dashboards_revenue
@@ -1065,10 +1065,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Fdim_party.view.lkml?line=835"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Fdim_party.view.lkml?line=835"
         permanent: true
         source_file: views/dim_party.view.lkml
-        source_file_path: qa_ax360_portal/views/dim_party.view.lkml
+        source_file_path: prj_ax360_portal/views/dim_party.view.lkml
         sql: 'cast(round(${avg_age}) as string) '
         sql_case:
         filters:
@@ -1113,7 +1113,7 @@
         measure: true
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: total_revenue_party_ndt
         suggest_dimension: total_revenue_party_ndt.median_client_revenue
         suggest_explore: ax360_dashboards_revenue
@@ -1122,10 +1122,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Ftotal_revenue_party_ndt.view.lkml?line=223"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Ftotal_revenue_party_ndt.view.lkml?line=223"
         permanent: true
         source_file: views/total_revenue_party_ndt.view.lkml
-        source_file_path: qa_ax360_portal/views/total_revenue_party_ndt.view.lkml
+        source_file_path: prj_ax360_portal/views/total_revenue_party_ndt.view.lkml
         sql: 'coalesce(${revenue},0) '
         sql_case:
         filters:
@@ -1170,7 +1170,7 @@
         measure: true
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: total_revenue_last_12_months_pdt
         suggest_dimension: total_revenue_last_12_months_pdt.revenue_on_assets_for_clients
         suggest_explore: ax360_dashboards_revenue
@@ -1179,10 +1179,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Ftotal_revenue_last_12_months_pdt.view.lkml?line=135"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Ftotal_revenue_last_12_months_pdt.view.lkml?line=135"
         permanent: true
         source_file: views/total_revenue_last_12_months_pdt.view.lkml
-        source_file_path: qa_ax360_portal/views/total_revenue_last_12_months_pdt.view.lkml
+        source_file_path: prj_ax360_portal/views/total_revenue_last_12_months_pdt.view.lkml
         sql: 'ifnull(${total_12_month_revenue_for_clients}/nullif(${avg_aua_for_clients},0),0) '
         sql_case:
         filters:
@@ -1228,7 +1228,7 @@
         measure: false
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: dashboard
         suggest_dimension: dashboard.income_tier
         suggest_explore: ax360_dashboards_revenue
@@ -1237,10 +1237,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Fdashboard.view.lkml?line=889"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Fdashboard.view.lkml?line=889"
         permanent: true
         source_file: views/dashboard.view.lkml
-        source_file_path: qa_ax360_portal/views/dashboard.view.lkml
+        source_file_path: prj_ax360_portal/views/dashboard.view.lkml
         sql: "CASE\n          WHEN ${dim_party.current_party_approx_annual_income_numeric}\
           \  < 25000 THEN   '{{ _localization['below_25k_income_seg'] }}'\n      \
           \    WHEN ${dim_party.current_party_approx_annual_income_numeric}  >= 25000\
@@ -1705,7 +1705,7 @@
         measure: true
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: dashboard
         suggest_dimension: dashboard.total_clients_pct_drill_for_segments_nohtml
         suggest_explore: ax360_dashboards_revenue
@@ -1714,10 +1714,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Fdashboard.view.lkml?line=763"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Fdashboard.view.lkml?line=763"
         permanent: true
         source_file: views/dashboard.view.lkml
-        source_file_path: qa_ax360_portal/views/dashboard.view.lkml
+        source_file_path: prj_ax360_portal/views/dashboard.view.lkml
         sql: "${dim_party.total_clients} /nullif(${totals_for_segments_ndt.total_clients_for_segments},0)"
         sql_case:
         filters:
@@ -1762,7 +1762,7 @@
         measure: true
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: dim_party
         suggest_dimension: dim_party.total_clients
         suggest_explore: ax360_dashboards_revenue
@@ -1771,10 +1771,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Fdim_party.view.lkml?line=794"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Fdim_party.view.lkml?line=794"
         permanent: true
         source_file: views/dim_party.view.lkml
-        source_file_path: qa_ax360_portal/views/dim_party.view.lkml
+        source_file_path: prj_ax360_portal/views/dim_party.view.lkml
         sql: 'count(distinct case when ${dim_accnt.account_status_level_1} = "{{ _localization[''Open'']
           }}" then ${dim_party.party_id} end) '
         sql_case:
@@ -1820,7 +1820,7 @@
         measure: true
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: dashboard
         suggest_dimension: dashboard.total_aua_pct_for_revenue_segments
         suggest_explore: ax360_dashboards_revenue
@@ -1829,10 +1829,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Fdashboard.view.lkml?line=1068"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Fdashboard.view.lkml?line=1068"
         permanent: true
         source_file: views/dashboard.view.lkml
-        source_file_path: qa_ax360_portal/views/dashboard.view.lkml
+        source_file_path: prj_ax360_portal/views/dashboard.view.lkml
         sql: coalesce( ${total_aua_12_month_including_current_for_segments} /nullif(${totals_for_segments_ndt.total_aua_for_segments},0),0)
         sql_case:
         filters:
@@ -1877,7 +1877,7 @@
         measure: true
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: dashboard
         suggest_dimension: dashboard.total_aua_12_month_including_current_for_segments
         suggest_explore: ax360_dashboards_revenue
@@ -1886,10 +1886,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Fdashboard.view.lkml?line=1054"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Fdashboard.view.lkml?line=1054"
         permanent: true
         source_file: views/dashboard.view.lkml
-        source_file_path: qa_ax360_portal/views/dashboard.view.lkml
+        source_file_path: prj_ax360_portal/views/dashboard.view.lkml
         sql: "${fact_holdng_rr.total_aua_last_12_month_including_current} "
         sql_case:
         filters:
@@ -1934,7 +1934,7 @@
         measure: true
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: dashboard
         suggest_dimension: dashboard.total_aua_current_month_for_segments
         suggest_explore: ax360_dashboards_revenue
@@ -1943,10 +1943,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Fdashboard.view.lkml?line=1039"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Fdashboard.view.lkml?line=1039"
         permanent: true
         source_file: views/dashboard.view.lkml
-        source_file_path: qa_ax360_portal/views/dashboard.view.lkml
+        source_file_path: prj_ax360_portal/views/dashboard.view.lkml
         sql: "${fact_holdng_rr.total_aua_current_month} "
         sql_case:
         filters:
@@ -2019,7 +2019,7 @@
         measure: true
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: total_revenue_last_12_months_pdt
         suggest_dimension: total_revenue_last_12_months_pdt.total_12_month_revenue_for_clients
         suggest_explore: ax360_dashboards_revenue
@@ -2028,10 +2028,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Ftotal_revenue_last_12_months_pdt.view.lkml?line=92"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Ftotal_revenue_last_12_months_pdt.view.lkml?line=92"
         permanent: true
         source_file: views/total_revenue_last_12_months_pdt.view.lkml
-        source_file_path: qa_ax360_portal/views/total_revenue_last_12_months_pdt.view.lkml
+        source_file_path: prj_ax360_portal/views/total_revenue_last_12_months_pdt.view.lkml
         sql: 'coalesce(SUM(${TABLE}.total_12_month_revenue),0) '
         sql_case:
         filters:
@@ -2076,7 +2076,7 @@
         measure: true
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: total_revenue_last_12_months_pdt
         suggest_dimension: total_revenue_last_12_months_pdt.recurring_revenue_ratio_12_month_for_clients
         suggest_explore: ax360_dashboards_revenue
@@ -2085,10 +2085,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Ftotal_revenue_last_12_months_pdt.view.lkml?line=112"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Ftotal_revenue_last_12_months_pdt.view.lkml?line=112"
         permanent: true
         source_file: views/total_revenue_last_12_months_pdt.view.lkml
-        source_file_path: qa_ax360_portal/views/total_revenue_last_12_months_pdt.view.lkml
+        source_file_path: prj_ax360_portal/views/total_revenue_last_12_months_pdt.view.lkml
         sql: 'ifnull(${total_12_month_recurring_revenue_for_clients} / nullif(${total_12_month_revenue_for_clients},0),0) '
         sql_case:
         filters:
@@ -2133,7 +2133,7 @@
         measure: true
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: dim_party
         suggest_dimension: dim_party.average_client_age
         suggest_explore: ax360_dashboards_revenue
@@ -2142,10 +2142,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Fdim_party.view.lkml?line=835"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Fdim_party.view.lkml?line=835"
         permanent: true
         source_file: views/dim_party.view.lkml
-        source_file_path: qa_ax360_portal/views/dim_party.view.lkml
+        source_file_path: prj_ax360_portal/views/dim_party.view.lkml
         sql: 'cast(round(${avg_age}) as string) '
         sql_case:
         filters:
@@ -2190,7 +2190,7 @@
         measure: true
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: total_revenue_party_ndt
         suggest_dimension: total_revenue_party_ndt.median_client_revenue
         suggest_explore: ax360_dashboards_revenue
@@ -2199,10 +2199,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Ftotal_revenue_party_ndt.view.lkml?line=223"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Ftotal_revenue_party_ndt.view.lkml?line=223"
         permanent: true
         source_file: views/total_revenue_party_ndt.view.lkml
-        source_file_path: qa_ax360_portal/views/total_revenue_party_ndt.view.lkml
+        source_file_path: prj_ax360_portal/views/total_revenue_party_ndt.view.lkml
         sql: 'coalesce(${revenue},0) '
         sql_case:
         filters:
@@ -2247,7 +2247,7 @@
         measure: true
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: total_revenue_last_12_months_pdt
         suggest_dimension: total_revenue_last_12_months_pdt.revenue_on_assets_for_clients
         suggest_explore: ax360_dashboards_revenue
@@ -2256,10 +2256,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Ftotal_revenue_last_12_months_pdt.view.lkml?line=135"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Ftotal_revenue_last_12_months_pdt.view.lkml?line=135"
         permanent: true
         source_file: views/total_revenue_last_12_months_pdt.view.lkml
-        source_file_path: qa_ax360_portal/views/total_revenue_last_12_months_pdt.view.lkml
+        source_file_path: prj_ax360_portal/views/total_revenue_last_12_months_pdt.view.lkml
         sql: 'ifnull(${total_12_month_revenue_for_clients}/nullif(${avg_aua_for_clients},0),0) '
         sql_case:
         filters:
@@ -2305,7 +2305,7 @@
         measure: false
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: dashboard
         suggest_dimension: dashboard.age_tier
         suggest_explore: ax360_dashboards_revenue
@@ -2314,10 +2314,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Fdashboard.view.lkml?line=904"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Fdashboard.view.lkml?line=904"
         permanent: true
         source_file: views/dashboard.view.lkml
-        source_file_path: qa_ax360_portal/views/dashboard.view.lkml
+        source_file_path: prj_ax360_portal/views/dashboard.view.lkml
         sql: "CASE\n          WHEN ${dim_party.age}  < 18 AND ${dim_party.age}  >\
           \ 0  THEN   '{{ _localization['below_18'] }}'\n          WHEN ${dim_party.age}\
           \  >= 18 AND ${dim_party.age}  < 30 THEN '{{ _localization['18_to_29'] }}'\n\
@@ -4627,7 +4627,7 @@
         measure: true
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: dashboard
         suggest_dimension: dashboard.total_clients_pct_drill_for_segments_nohtml
         suggest_explore: ax360_dashboards_revenue
@@ -4636,10 +4636,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Fdashboard.view.lkml?line=779"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Fdashboard.view.lkml?line=779"
         permanent: true
         source_file: views/dashboard.view.lkml
-        source_file_path: qa_ax360_portal/views/dashboard.view.lkml
+        source_file_path: prj_ax360_portal/views/dashboard.view.lkml
         sql: "${dim_party.total_clients} /nullif(${totals_for_segments_ndt.total_clients_for_segments},0)"
         sql_case:
         filters:
@@ -4684,7 +4684,7 @@
         measure: true
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: dashboard
         suggest_dimension: dashboard.total_aua_pct_for_revenue_segments
         suggest_explore: ax360_dashboards_revenue
@@ -4693,10 +4693,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Fdashboard.view.lkml?line=1093"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Fdashboard.view.lkml?line=1093"
         permanent: true
         source_file: views/dashboard.view.lkml
-        source_file_path: qa_ax360_portal/views/dashboard.view.lkml
+        source_file_path: prj_ax360_portal/views/dashboard.view.lkml
         sql: coalesce( ${total_aua_12_month_including_current_for_segments} /nullif(${totals_for_segments_ndt.total_aua_for_segments},0),0)
         sql_case:
         filters:
@@ -4741,7 +4741,7 @@
         measure: true
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: dim_party
         suggest_dimension: dim_party.total_clients
         suggest_explore: ax360_dashboards_revenue
@@ -4750,10 +4750,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Fdim_party.view.lkml?line=794"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Fdim_party.view.lkml?line=794"
         permanent: true
         source_file: views/dim_party.view.lkml
-        source_file_path: qa_ax360_portal/views/dim_party.view.lkml
+        source_file_path: prj_ax360_portal/views/dim_party.view.lkml
         sql: 'count(distinct case when ${dim_accnt.account_status_level_1} = "{{ _localization[''Open'']
           }}" then ${dim_party.party_id} end) '
         sql_case:
@@ -4799,7 +4799,7 @@
         measure: true
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: dashboard
         suggest_dimension: dashboard.total_aua_12_month_including_current_for_segments
         suggest_explore: ax360_dashboards_revenue
@@ -4808,10 +4808,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Fdashboard.view.lkml?line=1079"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Fdashboard.view.lkml?line=1079"
         permanent: true
         source_file: views/dashboard.view.lkml
-        source_file_path: qa_ax360_portal/views/dashboard.view.lkml
+        source_file_path: prj_ax360_portal/views/dashboard.view.lkml
         sql: "${fact_holdng_rr.total_aua_last_12_month_including_current} "
         sql_case:
         filters:
@@ -4856,7 +4856,7 @@
         measure: true
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: dashboard
         suggest_dimension: dashboard.total_aua_current_month_for_segments
         suggest_explore: ax360_dashboards_revenue
@@ -4865,10 +4865,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Fdashboard.view.lkml?line=1064"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Fdashboard.view.lkml?line=1064"
         permanent: true
         source_file: views/dashboard.view.lkml
-        source_file_path: qa_ax360_portal/views/dashboard.view.lkml
+        source_file_path: prj_ax360_portal/views/dashboard.view.lkml
         sql: "${fact_holdng_rr.total_aua_current_month} "
         sql_case:
         filters:
@@ -4941,7 +4941,7 @@
         measure: true
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: total_revenue_last_12_months_pdt
         suggest_dimension: total_revenue_last_12_months_pdt.total_12_month_revenue_for_clients
         suggest_explore: ax360_dashboards_revenue
@@ -4950,10 +4950,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Ftotal_revenue_last_12_months_pdt.view.lkml?line=140"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Ftotal_revenue_last_12_months_pdt.view.lkml?line=140"
         permanent: true
         source_file: views/total_revenue_last_12_months_pdt.view.lkml
-        source_file_path: qa_ax360_portal/views/total_revenue_last_12_months_pdt.view.lkml
+        source_file_path: prj_ax360_portal/views/total_revenue_last_12_months_pdt.view.lkml
         sql: 'coalesce(SUM(${TABLE}.total_12_month_revenue),0) '
         sql_case:
         filters:
@@ -4998,7 +4998,7 @@
         measure: true
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: total_revenue_last_12_months_pdt
         suggest_dimension: total_revenue_last_12_months_pdt.recurring_revenue_ratio_12_month_for_clients
         suggest_explore: ax360_dashboards_revenue
@@ -5007,10 +5007,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Ftotal_revenue_last_12_months_pdt.view.lkml?line=172"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Ftotal_revenue_last_12_months_pdt.view.lkml?line=172"
         permanent: true
         source_file: views/total_revenue_last_12_months_pdt.view.lkml
-        source_file_path: qa_ax360_portal/views/total_revenue_last_12_months_pdt.view.lkml
+        source_file_path: prj_ax360_portal/views/total_revenue_last_12_months_pdt.view.lkml
         sql: 'ifnull(${total_12_month_recurring_revenue_for_clients} / nullif(${total_12_month_revenue_for_clients},0),0) '
         sql_case:
         filters:
@@ -5055,7 +5055,7 @@
         measure: true
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: dim_party
         suggest_dimension: dim_party.average_client_age
         suggest_explore: ax360_dashboards_revenue
@@ -5064,10 +5064,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Fdim_party.view.lkml?line=840"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Fdim_party.view.lkml?line=840"
         permanent: true
         source_file: views/dim_party.view.lkml
-        source_file_path: qa_ax360_portal/views/dim_party.view.lkml
+        source_file_path: prj_ax360_portal/views/dim_party.view.lkml
         sql: coalesce(cast(round(${avg_age}) as string), "{{ _localization['not_available']
           }}" )
         sql_case:
@@ -5113,7 +5113,7 @@
         measure: true
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: total_revenue_party_ndt
         suggest_dimension: total_revenue_party_ndt.median_client_revenue
         suggest_explore: ax360_dashboards_revenue
@@ -5122,10 +5122,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Ftotal_revenue_party_ndt.view.lkml?line=238"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Ftotal_revenue_party_ndt.view.lkml?line=238"
         permanent: true
         source_file: views/total_revenue_party_ndt.view.lkml
-        source_file_path: qa_ax360_portal/views/total_revenue_party_ndt.view.lkml
+        source_file_path: prj_ax360_portal/views/total_revenue_party_ndt.view.lkml
         sql: 'coalesce(${revenue},0) '
         sql_case:
         filters:
@@ -5170,7 +5170,7 @@
         measure: true
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: total_revenue_last_12_months_pdt
         suggest_dimension: total_revenue_last_12_months_pdt.revenue_on_assets_for_clients
         suggest_explore: ax360_dashboards_revenue
@@ -5179,10 +5179,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Ftotal_revenue_last_12_months_pdt.view.lkml?line=204"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Ftotal_revenue_last_12_months_pdt.view.lkml?line=204"
         permanent: true
         source_file: views/total_revenue_last_12_months_pdt.view.lkml
-        source_file_path: qa_ax360_portal/views/total_revenue_last_12_months_pdt.view.lkml
+        source_file_path: prj_ax360_portal/views/total_revenue_last_12_months_pdt.view.lkml
         sql: 'ifnull(${total_12_month_revenue_for_clients}/nullif(${avg_aua_for_clients},0),0) '
         sql_case:
         filters:
@@ -5228,7 +5228,7 @@
         measure: false
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: total_aua_party_ndt
         suggest_dimension: total_aua_party_ndt.aua_tier
         suggest_explore: ax360_dashboards_revenue
@@ -5237,10 +5237,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Ftotal_aua_party_ndt.view.lkml?line=67"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Ftotal_aua_party_ndt.view.lkml?line=67"
         permanent: true
         source_file: views/total_aua_party_ndt.view.lkml
-        source_file_path: qa_ax360_portal/views/total_aua_party_ndt.view.lkml
+        source_file_path: prj_ax360_portal/views/total_aua_party_ndt.view.lkml
         sql: "CASE\n          WHEN ${aua}  < 50000 THEN '{{ _localization['below_50k_aua_seg']\
           \ }}'\n          WHEN ${aua}  >= 50000 AND ${aua}  < 100000 THEN '{{ _localization['50k_to_99k_aua_seg']\
           \ }}'\n          WHEN ${aua}  >= 100000 AND ${aua}  < 250000 THEN '{{ _localization['100k_to_249k_aua_seg']\

@@ -676,7 +676,7 @@
         measure: true
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: dashboard
         suggest_dimension: dashboard.total_aua_last_12_month_master_list
         suggest_explore: ax360_dashboards_historical
@@ -685,10 +685,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Fdashboard.view.lkml?line=1184"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Fdashboard.view.lkml?line=1184"
         permanent: true
         source_file: views/dashboard.view.lkml
-        source_file_path: qa_ax360_portal/views/dashboard.view.lkml
+        source_file_path: prj_ax360_portal/views/dashboard.view.lkml
         sql: 'coalesce(${fact_holdng_rr_12_months_master_list.aua_converted_to_cad_last_business_day_of_months},0) '
         sql_case:
         filters:
@@ -761,7 +761,7 @@
         measure: true
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: dashboard
         suggest_dimension: dashboard.existing_client_cashflow_drill
         suggest_explore: ax360_dashboards_historical
@@ -770,10 +770,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Fdashboard.view.lkml?line=1702"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Fdashboard.view.lkml?line=1702"
         permanent: true
         source_file: views/dashboard.view.lkml
-        source_file_path: qa_ax360_portal/views/dashboard.view.lkml
+        source_file_path: prj_ax360_portal/views/dashboard.view.lkml
         sql: "${fact_transctn_rr.total_existing_clients_cashflow} "
         sql_case:
         filters:
@@ -818,7 +818,7 @@
         measure: true
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: dashboard
         suggest_dimension: dashboard.new_clients_cashflow_drill
         suggest_explore: ax360_dashboards_historical
@@ -827,10 +827,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Fdashboard.view.lkml?line=1538"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Fdashboard.view.lkml?line=1538"
         permanent: true
         source_file: views/dashboard.view.lkml
-        source_file_path: qa_ax360_portal/views/dashboard.view.lkml
+        source_file_path: prj_ax360_portal/views/dashboard.view.lkml
         sql: "${fact_transctn_rr.total_new_clients_cashflow} "
         sql_case:
         filters:
@@ -875,7 +875,7 @@
         measure: true
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: dashboard
         suggest_dimension: dashboard.lost_clients_cashflow_drill
         suggest_explore: ax360_dashboards_historical
@@ -884,10 +884,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Fdashboard.view.lkml?line=1626"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Fdashboard.view.lkml?line=1626"
         permanent: true
         source_file: views/dashboard.view.lkml
-        source_file_path: qa_ax360_portal/views/dashboard.view.lkml
+        source_file_path: prj_ax360_portal/views/dashboard.view.lkml
         sql: "${fact_transctn_rr.total_lost_clients_cashflow} "
         sql_case:
         filters:
@@ -933,7 +933,7 @@
         measure: false
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: last_12_months_master_list
         suggest_dimension: last_12_months_master_list.last_12_month_with_mtd_wo_13th_month
         suggest_explore: ax360_dashboards_historical
@@ -942,10 +942,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Flast_12_months_master_list.view.lkml?line=44"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Flast_12_months_master_list.view.lkml?line=44"
         permanent: true
         source_file: views/last_12_months_master_list.view.lkml
-        source_file_path: qa_ax360_portal/views/last_12_months_master_list.view.lkml
+        source_file_path: prj_ax360_portal/views/last_12_months_master_list.view.lkml
         sql: |-
           CASE WHEN  ${last_12_months_date} >= DATE_SUB( ${last_holding_date.last_update_date}, INTERVAL 11 month) THEN
                      CASE WHEN FORMAT_DATE('%Y-%m',${last_12_months_date})= FORMAT_DATE('%Y-%m',  cast("{{ _user_attributes['latest_holding_date'] }}" as date) )  THEN '{{ _localization['month_to_date'] }}'
@@ -1008,7 +1008,7 @@
         measure: false
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: last_12_months_master_list
         suggest_dimension: last_12_months_master_list.last_12_months_month
         suggest_explore: ax360_dashboards_historical
@@ -1019,10 +1019,10 @@
         time_interval:
           name: month
           count: 1
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Flast_12_months_master_list.view.lkml?line=10"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Flast_12_months_master_list.view.lkml?line=10"
         permanent: true
         source_file: views/last_12_months_master_list.view.lkml
-        source_file_path: qa_ax360_portal/views/last_12_months_master_list.view.lkml
+        source_file_path: prj_ax360_portal/views/last_12_months_master_list.view.lkml
         sql: "${TABLE}.last_12_months_date "
         sql_case:
         filters:
@@ -1066,7 +1066,7 @@
         measure: false
         parameter: false
         primary_key: false
-        project_name: qa_ax360_portal
+        project_name: prj_ax360_portal
         scope: dashboard
         suggest_dimension: dashboard.trad_dt_month_with_mtd
         suggest_explore: ax360_dashboards_historical
@@ -1075,10 +1075,10 @@
         is_timeframe: false
         can_time_filter: false
         time_interval:
-        lookml_link: "/projects/qa_ax360_portal/files/views%2Fdashboard.view.lkml?line=1394"
+        lookml_link: "/projects/prj_ax360_portal/files/views%2Fdashboard.view.lkml?line=1394"
         permanent: true
         source_file: views/dashboard.view.lkml
-        source_file_path: qa_ax360_portal/views/dashboard.view.lkml
+        source_file_path: prj_ax360_portal/views/dashboard.view.lkml
         sql: "CASE WHEN ${fact_transctn_rr.trad_dt_month}= (FORMAT_DATE('%Y-%m', ${last_holding_date.last_update_date}\
           \ ))  THEN '{{ _localization['month_to_date'] }}'\n              WHEN cast(format_date('%B',${fact_transctn_rr.trad_dt_date})\
           \ as string) =\"January\" THEN '{{ _localization['january'] }}'\n      \
