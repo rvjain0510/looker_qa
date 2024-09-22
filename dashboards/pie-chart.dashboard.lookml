@@ -8,7 +8,7 @@
   elements:
     - title: ''
       name: ''
-      model: qa_ax360_portal
+      model: ax360_portal
       explore: access_portal_dashboard
       type: looker_pie
       fields: [fact_allctn_holdng.allocation_aua, fact_allctn_holdng.allocation_code,
