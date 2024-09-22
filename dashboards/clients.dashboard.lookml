@@ -8,7 +8,7 @@
   elements:
   - title: total_clients_by_account_type
     name: total_clients_by_account_type
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards
     type: looker_grid
     fields: [dashboard.accnt_tp__name_merged, dashboard.total_active_clients_drill_accnt_tp]
@@ -155,7 +155,7 @@
     height: 9
   - title: total_clients_by_program_type
     name: total_clients_by_program_type
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards
     type: looker_grid
     fields: [dashboard.total_active_clients_drill_prgrm_tp, dashboard.accnt_progrm_tp__value]
@@ -293,7 +293,7 @@
     height: 9
   - title: client_segmentation_by_income
     name: client_segmentation_by_income
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards
     type: looker_grid
     fields: [dashboard.income_tier, dashboard.total_clients_pct_drill_for_segments,
@@ -513,7 +513,7 @@
     height: 5
   - title: client_segmentation_by_asset
     name: client_segmentation_by_asset
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards
     type: looker_grid
     fields: [total_aua_party_ndt.aua_tier, total_aua_party_ndt.aua_segments_clients_pct,
@@ -691,7 +691,7 @@
     height: 5
   - title: client_segmentation_by_age
     name: client_segmentation_by_age
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards
     type: looker_grid
     fields: [dashboard.total_clients_pct_drill_for_segments, dashboard.total_aua_pct_for_segments,
@@ -913,7 +913,7 @@
     height: 7
   - title: household_segmentation_by_age
     name: household_segmentation_by_age
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards_hh
     type: looker_grid
     fields: [households_age_income_segments.age_tier, households_age_income_segments.total_households_count,
@@ -1102,7 +1102,7 @@
     height: 6
   - title: household_segmentation_by_income
     name: household_segmentation_by_income
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards_hh
     type: looker_grid
     fields: [households_age_income_segments.total_households_count, households_aua_segments.households_aua,
@@ -1288,7 +1288,7 @@
     height: 5
   - title: household_segmentation_by_asset
     name: household_segmentation_by_asset
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards_hh
     type: looker_grid
     fields: [households_age_income_segments.total_households_count, households_aua_segments.households_aua,
@@ -1477,7 +1477,7 @@
     height: 6
   - title: total_clients_single_value
     name: total_clients_single_value
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards
     type: marketplace_viz_multiple_value::multiple_value-marketplace
     fields: [dashboard.total_client_multi_value]
@@ -1555,7 +1555,7 @@
     height: 4
   - title: new_clients
     name: new_clients
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards
     type: marketplace_viz_multiple_value::multiple_value-marketplace
     fields: [dashboard.new_client_multi_value]
@@ -1614,7 +1614,7 @@
     height: 4
   - title: lost_clients
     name: lost_clients
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards
     type: marketplace_viz_multiple_value::multiple_value-marketplace
     fields: [dashboard.total_lost_client_multi_value]
@@ -1675,7 +1675,7 @@
     height: 4
   - title: total_households
     name: total_households
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards_hh
     type: marketplace_viz_multiple_value::multiple_value-marketplace
     fields: [dashboard.total_household_multi_value]
@@ -1763,7 +1763,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards
     listens_to_filters: [RVP Name, Branch Name, Team Name]
     field: dashboard.rep_cd_with_rep_cd_name
@@ -1776,7 +1776,7 @@
     ui_config:
       type: advanced
       display: popover
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards
     listens_to_filters: [IA Code, Branch Name, Team Name]
     field: filtered_rep_cd_by_rvp_branch_team.regional_vice_president_name
@@ -1789,7 +1789,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards
     listens_to_filters: [IA Code, RVP Name, Team Name]
     field: filtered_rep_cd_by_rvp_branch_team.physical_branch_manager_name
@@ -1802,7 +1802,7 @@
     ui_config:
       type: advanced
       display: popover
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards
     listens_to_filters: [IA Code, RVP Name, Branch Name]
     field: filtered_rep_cd_by_rvp_branch_team.team_name

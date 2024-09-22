@@ -8,7 +8,7 @@
   elements:
   - title: asset_trend #this title is localized
     name: Asset Trend
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards_historical
     type: looker_area
     fields: [last_12_months_master_list.last_12_month_with_mtd_wo_13th_month, dashboard.total_aua_last_12_month_master_list]
@@ -87,7 +87,7 @@
     height: 8
   - title: total_assets_scorecard #this title is localized
     name: Total Assets
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards_historical
     type: marketplace_viz_multiple_value::multiple_value-marketplace
     fields: [dashboard.total_aua_multi_value_without_pct]
@@ -123,7 +123,7 @@
     height: 3
   - title: total_clients_single_value #this title is localized
     name: Total Clients
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards
     type: marketplace_viz_multiple_value::multiple_value-marketplace
     fields: [dashboard.total_client_multi_value_without_pct]
@@ -166,7 +166,7 @@
     height: 3
   - title: total_households #this title is localized
     name: Total Households
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: ax360_dashboards_hh
     type: marketplace_viz_multiple_value::multiple_value-marketplace
     fields: [dashboard.total_household_multi_value_without_pct]
