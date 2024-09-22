@@ -1,4 +1,4 @@
-project_name: "qa_ax360_portal"
+project_name: "ax360_portal"
 new_lookml_runtime: yes
 # # Use local_dependency: To enable referencing of another project
 # # on this instance with include: statements

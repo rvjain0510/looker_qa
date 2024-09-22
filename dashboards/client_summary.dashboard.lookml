@@ -7,7 +7,7 @@
   elements:
   - title: Client Summary
     name: Client Summary
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: access_portal_dashboard
     type: looker_grid
     fields: [dashboard.aua_converted_to_cad, dashboard.account_number_link, dashboard.accnt_tp_value,
