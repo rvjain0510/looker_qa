@@ -1,4 +1,4 @@
----
+--- Hello
 - dashboard: accounts
   title: Accounts
   layout: newspaper
@@ -9,8 +9,8 @@
   - title: total_accounts_by_account_type
     name: total_accounts_by_account_type
     model: ax360_portal
-    explore: ax360_dashboards
-    type: looker_grid
+    explore:    ax360_dashboards
+    type: looker_gridsdfs sd fs sdf sdsdf 
     fields: [dashboard.filtered_accnt_tp__name_merged, dashboard.total_active_accounts_drill_accnt_tp,
       dashboard.average_assets_per_active_accounts_wo_format]
     filters:
