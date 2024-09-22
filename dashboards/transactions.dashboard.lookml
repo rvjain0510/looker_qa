@@ -7,7 +7,7 @@
   elements:
   - title: Transactions
     name: Transactions
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: access_portal_dashboard
     type: looker_grid
     fields: [dashboard.settlmnt_dt_date, dashboard.trad_dt_date, dashboard.process_date,
@@ -104,7 +104,7 @@
       type: advanced
       display: popover
       options: []
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: access_portal_dashboard
     listens_to_filters: []
     field: dashboard.settlmnt_dt_date
@@ -118,7 +118,7 @@
       type: advanced
       display: popover
       options: []
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: access_portal_dashboard
     listens_to_filters: []
     field: dashboard.trad_dt_date
@@ -132,7 +132,7 @@
       type: advanced
       display: popover
       options: []
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: access_portal_dashboard
     listens_to_filters: []
     field: dashboard.process_date
@@ -145,7 +145,7 @@
     ui_config:
       type: advanced
       display: popover
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: access_portal_dashboard
     listens_to_filters: []
     field: dashboard.symbol_desc_transactions
@@ -158,7 +158,7 @@
     ui_config:
       type: tag_list
       display: popover
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: access_portal_dashboard
     listens_to_filters: []
     field: dim_transctn_cd.operation_type_descr
@@ -172,7 +172,7 @@
       type: advanced
       display: popover
       options: []
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: access_portal_dashboard
     listens_to_filters: []
     field: dashboard.transctn_quantt
@@ -186,7 +186,7 @@
       type: advanced
       display: popover
       options: []
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: access_portal_dashboard
     listens_to_filters: []
     field: dashboard.transctn_pric
@@ -200,7 +200,7 @@
       type: advanced
       display: popover
       options: []
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: access_portal_dashboard
     listens_to_filters: []
     field: dashboard.transaction_amount
@@ -213,7 +213,7 @@
     ui_config:
       type: checkboxes
       display: popover
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: access_portal_dashboard
     listens_to_filters: []
     field: dim_prodct_tran.prodct_tp_name
@@ -226,7 +226,7 @@
     ui_config:
       type: checkboxes
       display: popover
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: access_portal_dashboard
     listens_to_filters: []
     field: fact_transctn_rr.transctn_currnc

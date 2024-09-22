@@ -10,7 +10,7 @@
   elements:
   - title: ''
     name: ''
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: access_portal_dashboard
     type: looker_grid
     fields: [dashboard.client_list_name, dashboard.party_date_of_birth_date, dashboard.party_address_one_line,
@@ -106,7 +106,7 @@
     ui_config:
       type: advanced
       display: popover
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: access_portal_dashboard
     listens_to_filters: []
     field: dim_party.party_name
@@ -120,7 +120,7 @@
       type: advanced
       display: popover
       options: []
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: access_portal_dashboard
     listens_to_filters: []
     field: dim_party.party_date_of_birth_date
@@ -134,7 +134,7 @@
       type: advanced
       display: popover
       options: []
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: access_portal_dashboard
     listens_to_filters: []
     field: dim_party.party_address_one_line
@@ -148,7 +148,7 @@
       type: advanced
       display: popover
       options: []
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: access_portal_dashboard
     listens_to_filters: []
     field: dim_accnt.acct_type_and_number
@@ -161,7 +161,7 @@
     ui_config:
       type: advanced
       display: popover
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: access_portal_dashboard
     listens_to_filters: []
     field: dim_user_rep_cds.rep_cd
@@ -175,7 +175,7 @@
       type: advanced
       display: popover
       options: []
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: access_portal_dashboard
     listens_to_filters: []
     field: dashboard.aua_converted_to_cad
