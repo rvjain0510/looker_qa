@@ -7,7 +7,7 @@
   elements:
   - title: Household List
     name: Household List
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: access_portal_dashboard_hh
     type: looker_grid
     fields: [dashboard.houshld_list_name, dashboard.houshld_client_list, dashboard.aua_converted_to_cad_one,
@@ -78,7 +78,7 @@
     ui_config:
       type: advanced
       display: popover
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: access_portal_dashboard
     listens_to_filters: []
     field: houshlds.houshld_name
@@ -91,7 +91,7 @@
     ui_config:
       type: advanced
       display: popover
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: access_portal_dashboard
     listens_to_filters: []
     field: dim_party.party_name
@@ -104,7 +104,7 @@
     ui_config:
       type: advanced
       display: popover
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: access_portal_dashboard
     listens_to_filters: []
     field: houshlds.houshld_addrss
@@ -117,7 +117,7 @@
     ui_config:
       type: advanced
       display: popover
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: access_portal_dashboard
     listens_to_filters: []
     field: dim_user_rep_cds.rep_cd
@@ -131,7 +131,7 @@
       type: advanced
       display: popover
       options: []
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: access_portal_dashboard
     listens_to_filters: []
     field: fact_holdng_rr.aua_converted_to_cad

@@ -7,7 +7,7 @@
   elements:
   - title: Holdings - Consolidated
     name: Holdings - Consolidated
-    model: qa_ax360_portal
+    model: ax360_portal
     explore: access_portal_dashboard
     type: looker_grid
     fields: [dashboard.symbol_desc_holding, dashboard.quantity_holdings_consolidated,
