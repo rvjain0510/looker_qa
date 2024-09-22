@@ -1,4 +1,4 @@
---- Hello MAn
+--- Hello MAnly man
 - dashboard: accounts
   title: Accounts
   layout: newspaper
